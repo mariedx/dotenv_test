@@ -41,6 +41,6 @@ end
 topics = ["ficus"]
 client.filter(track: topics.join(",")) do |object|
   puts object.text if object.is_a?(Twitter::Tweet) 
-  client_rest.favorite(object)
-  client_rest.follow(object.user.screen_name)
+  # client_rest.favorite(object)
+  # client_rest.follow(object.user.screen_name)
 end 
